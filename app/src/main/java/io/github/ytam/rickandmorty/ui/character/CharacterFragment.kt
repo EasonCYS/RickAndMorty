@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.github.ytam.rickandmorty.R
 import io.github.ytam.rickandmorty.model.Character
+import io.github.ytam.rickandmorty.utils.EspressoIdlingResource
 import kotlinx.android.synthetic.main.fragment_character.*
 import kotlinx.android.synthetic.main.fragment_character.view.*
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -66,8 +67,10 @@ class CharacterFragment : Fragment() {
         characterSearchView.setOnQueryTextListener(
             object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
+                    EspressoIdlingResource.beginLoad(query)
                     viewModel.getCharacters(1, query)
                     characterSearchView.clearFocus()
+                    EspressoIdlingResource.endLoad(query)
                     return false
                 }
 
