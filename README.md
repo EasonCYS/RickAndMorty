@@ -31,7 +31,7 @@ You can also see and download apk file by [this link](https://github.com/ytam/Ri
 ## MAD Score 👇
 ![summary](https://github.com/ytam/RickAndMorty/blob/main/mad_scorecard.png)
 
-## Automnation UI Test
+## Automation UI Test
 ### How To Run
 1. Check out branch `test-ui-auto`
 2. Open in Android Studio
