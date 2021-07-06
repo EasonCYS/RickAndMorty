@@ -33,8 +33,8 @@ You can also see and download apk file by [this link](https://github.com/ytam/Ri
 
 ## Automnation UI Test
 ### How To Run
-1. Clone from branch `test-ui-auto`
-2. Open Android Studio
+1. Check out branch `test-ui-auto`
+2. Open in Android Studio
 3. Open AVD manager and run an AVD
 4. Follow [this](https://developer.android.com/training/testing/espresso/setup#set-up-environment) to disable 3 settings in `Developer Options` of AVD 
 5. Click "Run" button (you can also right click on `app/src/androidTest/java/io/github/ytam/rickandmorty/ui/main/TestSuite.kt` to run it).
